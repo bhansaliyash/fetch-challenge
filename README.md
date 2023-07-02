@@ -13,15 +13,16 @@ To run the API, run the following command:
     git clone https://github.com/bhansaliyash/fetch-challenge
 ```
 
-* Run the command - 
+* Run the command in the application folder - 
 ```
-    docker compose up -d receipt_processor
+    docker compose up
 ```
 
 This will start the API on port 8000. You can access the API documentation at http://localhost:8000/docs.
 
-* To stop the running container use - 
+* Commands to start and stop the container in background (if required)- 
 ```
+    docker compose up -d receipt_processor
     docker compose stop receipt_processor
 ```
 ### API Endpoints
@@ -72,7 +73,7 @@ This will return the following response:
 
 ## Running the test cases
 
-* Once the docker container is running use the below command to run the associated test cases written in test.py- 
+* Once the docker container is running use the below command to run the associated test cases written in test.py. You can run the command in a different terminal at root level- 
 
 ```
 docker exec fetch-receipt_processor-1 python -m unittest test.py
