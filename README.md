@@ -20,6 +20,10 @@ To run the API, run the following command:
 
 This will start the API on port 8000. You can access the API documentation at http://localhost:8000/docs.
 
+* To stop the running container use - 
+```
+    docker compose stop receipt_processor
+```
 ### API Endpoints
 do
 The API has two endpoints:
